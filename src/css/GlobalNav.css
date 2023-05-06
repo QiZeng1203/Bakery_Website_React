@@ -1,0 +1,116 @@
+.global-nav__toggle {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border: none;
+
+    background-color: var(--bg-banner-color);
+}
+
+i {
+    pointer-events: none;
+}
+
+.global-nav__list {
+    display: none;
+    position: absolute;
+
+    padding:0;
+    margin: 1rem 0 0 -2rem;
+
+    background-color: var(--bg-banner-color);
+
+    text-align: left;
+    overflow: hidden;
+    list-style: none;
+}
+
+.global-nav__list--open {
+    display: block;
+
+}
+
+.global-nav__link {
+    display: inline-block;
+
+    padding: 0.5rem 1rem;
+
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+/*the icon used below CSS adapted from https://css.gg under the MIT License */
+.gg-menu {
+    transform: scale(var(--ggs,1))
+   }
+   
+   .gg-menu,
+   .gg-menu::after,
+   .gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor;
+    color: black;
+   }
+   
+   .gg-menu::after,
+   .gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+   }
+   
+   .gg-menu::after {
+    top: 6px
+   } 
+
+.global-nav__link:hover {
+    background-color: var(--bg-banner-select-color);
+    color: white;
+}
+
+/* Dark Mode */
+.dark .global-nav__toggle,
+.dark .global-nav__list{
+    background-color: var(--dark-bg-banner-color);
+}
+
+.dark .global-nav__link:hover {
+    background-color: var(--dark-bg-banner-select-color);
+    color: black;
+}
+
+.dark .global-nav__link {
+    color: white;
+}
+
+.dark .gg-menu,
+.dark .gg-menu::after,
+.dark .gg-menu::before {
+    color: white;
+}
+
+
+@media (min-width: 44rem) {
+    .global-nav {
+        background-color: var(--bg-banner-color);
+    }
+
+    .global-nav__list {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .global-nav__toggle {
+        display: none;
+    }
+}

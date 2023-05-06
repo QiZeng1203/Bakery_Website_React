@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #F1E8EA;
+  --bg-banner-color: #D88D96;
+  --bg-banner-select-color: firebrick;
+  --bg-botton-color: #AD192A;
+  --bg-content-color: #EAB1B9;
+
+  --dark-bg-color: #27241D;
+  --dark-bg-banner-color: #504A40;
+  --dark-bg-banner-select-color: #D88D96;
+  --dark-bg-content-color: #A39E93;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+
+  background-color: var(--bg-color);
+  
+  font-family: 'Futura Book', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+h1 {
+  font-family: fantasy, cursive, sans-serif;
+}
+
+h2, h3, h4 {
+  font-family: "Gill Sans", sans-serif;
+}
+
+a {
+  font-family: "Gill Sans", sans-serif;
+}
+
+p {
+  font-family: 'Futura Book', sans-serif;
+}

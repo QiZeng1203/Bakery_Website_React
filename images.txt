@@ -1,0 +1,14 @@
+All images used in the website are from http://unsplash.com. 
+The images follows the lincense that allows users to download and use for free.
+License: https://unsplash.com/license
+
+pancake.jpg: https://unsplash.com/photos/CZZ0yqTsSbQ;
+cupcake.jpg: https://unsplash.com/photos/S2jw81lfrG0;
+pudding.jpg: https://unsplash.com/photos/lK1Q5RyD6tc;
+macaron.jpg: https://unsplash.com/photos/i5BY6W2ttts;
+donuts.jpg: https://unsplash.com/photos/llBeYMtGXjk;
+croissant.jpg: https://unsplash.com/photos/N_enD_8s3nI;
+logo.jpg: https://unsplash.com/photos/FAnSK-gVGZU;
+Carousel1.jpg: https://unsplash.com/photos/o9kswzHrvMs;
+Carousel2.jpg: https://unsplash.com/photos/vT5xrj3z1OE;
+Carousel3.jpg: https://unsplash.com/photos/ewOrvEa87j4;

@@ -1,0 +1,185 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    padding: 1rem;
+
+    background-color: var(--bg-banner-color);
+    color: black;
+}
+
+.openning-hour,
+.address,
+.social-account {
+    grid-column: span 12;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-link {
+    grid-column: span 4;
+
+    line-height: 1.6;
+    list-style: none;
+}
+
+.copyright {
+    grid-column: span 12;
+    font-size: 0.8rem;
+}
+
+/* Dark Mode */ 
+.dark .footer {
+    background-color: var(--dark-bg-banner-color);
+    color: white;
+}
+.dark .gg-facebook,
+.dark .gg-instagram,
+.dark .gg-twitter {
+    color: white;
+}
+
+/*the icon used below CSS adapted from https://css.gg under the MIT License */
+.gg-facebook {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    color: black;
+   }
+   
+   .gg-facebook::after,
+   .gg-facebook::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box
+   }
+   
+   .gg-facebook::before {
+    width: 8px;
+    height: 20px;
+    border-left: 4px solid;
+    border-top: 4px solid;
+    border-top-left-radius: 5px;
+    left: 6px
+   }
+   
+   .gg-facebook::after {
+    width: 10px;
+    height: 4px;
+    background: currentColor;
+    top: 7px;
+    left: 4px;
+    transform: skew(-5deg)
+   } 
+
+   .gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    color: black;
+   }
+   
+   .gg-instagram::after,
+   .gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+   }
+   
+   .gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+   } 
+
+   .gg-twitter {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    color: black;
+   }
+   
+   .gg-twitter::after,
+   .gg-twitter::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 4px
+   }
+   
+   .gg-twitter::before {
+    width: 9px;
+    height: 14px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 6px;
+    background:
+    linear-gradient(
+    to left,currentColor 12px,transparent 0)
+    no-repeat center 2px/10px 4px;
+    top: 4px
+   }
+   
+   .gg-twitter::after {
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 20px;
+    top: 2px;
+    box-shadow: 7px 4px 0,7px 12px 0
+   } 
+
+
+@media (min-width: 44rem) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .openning-hour,
+    .address,
+    .social-account {
+        grid-column: span 4;
+    }
+
+    .footer-links {
+        margin: 1rem;
+    }
+
+    .footer-link {
+        grid-column: span 3;
+    }
+}

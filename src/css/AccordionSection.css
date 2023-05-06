@@ -1,0 +1,44 @@
+.accordion-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+
+    border: none;
+    border-bottom: 3px solid var(--bg-banner-color);
+    padding:  1rem 2rem;
+
+    background-color: var(--bg-color);
+
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.accordion:first-of-type>.accordion-button {
+    border-top: 3px solid var(--bg-banner-color);
+}
+
+.accordion-button::after {
+    content: "+";
+}
+
+.accordion-button-open::after {
+    content: "-";
+}
+
+.accordion-button-open {
+    border: none;
+}
+
+.accordion-content {
+    padding: 1rem 2rem;
+    border-bottom: 3px solid var(--bg-banner-color);
+    line-height: 1.6;
+}
+
+/* Dark Mode */
+.dark .accordion-button {
+    background-color: var(--dark-bg-color);
+    color: white;
+}

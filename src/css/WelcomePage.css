@@ -1,0 +1,82 @@
+.welcome {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.welcome h2 {
+    grid-column: span 12;
+}
+
+.logout-button {
+    grid-column: 4/10;
+    margin: 0.5rem 1rem;
+}
+
+.change-name-button {
+    grid-column: 4/10;
+    margin: 0.5rem 1rem;
+}
+
+.dialog {
+    border: 4px solid black;
+}
+
+.dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.6 );
+}
+
+.button-close {
+    border: none;
+
+    background-color: white;
+}
+.change-name-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-name-label {
+    margin: 1rem 0;
+}
+
+
+@media (min-width: 44rem) {
+    .logout-button {
+        grid-column: 4/7;
+    }
+    
+    .change-name-button {
+        grid-column: 7/10;
+    }
+}
+
+.gg-close-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 40px;
+    color: var(--bg-botton-color);
+   }
+   
+   .gg-close-o::after,
+   .gg-close-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 3px
+   }
+   
+   .gg-close-o::after {
+    transform: rotate(-45deg)
+   } 

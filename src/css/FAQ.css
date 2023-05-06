@@ -1,0 +1,9 @@
+.FAQ {
+    margin: 1rem;
+}
+
+@media (min-width: 44rem) {
+    .FAQ {
+        margin: 1rem 15%;
+    }
+}

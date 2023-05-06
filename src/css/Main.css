@@ -1,0 +1,5 @@
+/* Dark Mode */
+.dark .main {
+    background-color: var(--dark-bg-color);
+    color: white;
+}

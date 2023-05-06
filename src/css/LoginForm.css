@@ -1,0 +1,112 @@
+.login-form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.form-title{
+    grid-column: 2/12;
+}
+
+.form {
+    grid-column: 2/12;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.indicate-text {
+    text-align: center;
+}
+
+.name, 
+.email,
+.confirm-email,
+.shipping-address,
+.billing-address {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.5rem;
+}
+
+.same-address {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    padding: 0.5rem;
+}
+
+input {
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.name-error-message,
+.email-error-message,
+.confirm-error-message,
+.shipping-error-message,
+.billing-error-message {
+    color: #9E0000;
+    font-size: 0.8rem;
+}
+
+.dark .name-error-message,
+.dark .email-error-message,
+.dark .confirm-error-message,
+.dark .shipping-error-message,
+.dark .billing-error-message {
+    color: #FF8F8F;
+}
+
+
+@media (min-width: 44rem) {
+    .form{
+        grid-column: 4/10;
+        
+    }
+
+    .name, 
+    .email,
+    .confirm-email,
+    .shipping-address,
+    .billing-address,
+    .same-address {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .name-label, 
+    .email-label,
+    .confirm-email-label,
+    .shipping-address-label,
+    .billing-address-label {
+        grid-column: 1/6;
+        align-self: center;
+        text-align: right;
+    }
+
+    .name-input, 
+    .email-input,
+    .confirm-email-input,
+    .shipping-address-input,
+    .billing-address-input,
+    .same-address__label {
+        grid-column: 6/13;
+        margin-left: 0.5rem;
+        align-self: center;
+    }
+
+    .name-error-message,
+    .email-error-message,
+    .confirm-error-message,
+    .shipping-error-message,
+    .billing-error-message {
+        grid-column: 6/13;
+        margin-left: 0.5rem;
+    }
+
+    .same-address-input {
+        grid-column: 4/5;
+    }
+}
